@@ -43,3 +43,12 @@ Para rodar no eclipse o projeto requer algumas bibliotecas (classpath) que estã
 - /bin/twitter4j-stream-4.0.2.jar
 
 Mais detalhes no relatório.  
+
+-------------------------------------------------------------------------------------------------
+#### Autora
+- Professora Lara Popov Zambiasi Bazzi Oberderfer
+- Docente de Informática - Câmpus Chapecó
+- Acadêmica do Doutorado de Automação e Sistemas da UFSC 2021  
+- Instituto Federal de Santa Catarina - Câmpus Chapecó
+- IFSC: http://www.chapeco.ifsc.edu.br
+-------------------------------------------------------------------------------------------------

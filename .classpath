@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/agt"/>
+	<classpathentry kind="src" path="src/env"/>
+	<classpathentry kind="src" path="src/org"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="lib/search.jar"/>
+	<classpathentry kind="lib" path="lib/twitter4j-async-4.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/twitter4j-core-4.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/twitter4j-media-support-4.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/twitter4j-stream-4.0.2.jar"/>
+	<classpathentry kind="lib" path="/home/lara/Documentos/sma/goldminers/gold-miners-lara/lib/jason-2.5.1.jar"/>
+	<classpathentry kind="lib" path="/home/lara/Documentos/sma/goldminers/gold-miners-lara/lib/cartago-2.5.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

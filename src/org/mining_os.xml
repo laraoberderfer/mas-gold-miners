@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://moise.sourceforge.net/xml/os.xsl" type="text/xsl" ?>
+<organisational-specification
+    id="gold_miners"
+    os-version="0.1"
+
+    xmlns='http://moise.sourceforge.net/os'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation='http://moise.sourceforge.net/os http://moise.sourceforge.net/xml/os.xsd' >
+
+    <structural-specification>
+ 
+        <role-definitions>
+			 <role id="miner" />
+			 <role id="leader" />
+		</role-definitions>
+
+        <group-specification id="miningGroup">
+            <roles>
+                <role id="miner"/>
+                <role id="leader"/>
+            </roles>
+        </group-specification>
+
+    </structural-specification>
+
+    <functional-specification>
+
+        <scheme id="mining_sch" >
+            <goal id="winning">
+		     <plan operator="parallel">
+		       <goal id="miner" />
+		       <goal id="dropped" />
+		     </plan>
+		   </goal>
+
+            <mission id="mMiner" min="1" max="1">
+                <goal id="winning"/>
+            </mission>
+
+            <mission id="mLeader" min="1" max="1">
+                <goal id="dropped"/>
+            </mission>
+        </scheme>
+
+    </functional-specification>
+
+    <normative-specification>
+	  <norm id="n1"  type="permission"   role="miner"   mission="mMiner" />
+	  <norm id="n2"  type="obligation"   role="leader"  mission="mLeader" />
+	</normative-specification>
+
+</organisational-specification>

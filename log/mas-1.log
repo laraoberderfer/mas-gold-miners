@@ -1,0 +1,176 @@
+[Moise] Workspace miningOrg created.
+[Moise] getJoinedWorkspaces: [miningOrg]
+[Moise] scheme created: mining_schema: mining_sch using artifact SchemeBoard
+[Moise] group created: mGrp: miningGroup using artifact ora4mas.nopl.GroupBoard
+[Cartago] Workspace mining created.
+[Cartago] getJoinedWorkspaces: [main]
+[Cartago] artifact m1view: mining.MiningPlanet(6,0) at mining created.
+[Cartago] artifact m2view: mining.MiningPlanet(6,1) at mining created.
+[Cartago] artifact redTeamMap: mining.WorldMap("TeamRed") at mining created.
+[Cartago] artifact greenTeamMap: mining.WorldMap("TeamGreen") at mining created.
+[Cartago] artifact m4view: mining.MiningPlanet(6,3) at mining created.
+[Cartago] artifact pinkTeamMap: mining.WorldMap("TeamPink") at mining created.
+[Cartago] artifact m3view: mining.MiningPlanet(6,2) at mining created.
+[Cartago] artifact orangeTeamMap: mining.WorldMap("TeamOrange") at mining created.
+[redMiner] joinned workspace mining
+[pinkMiner] joinned workspace mining
+[redMiner] joinned workspace miningOrg
+[redMiner] focusing on artifact m3view (at workspace mining) using namespace default
+[pinkMiner] joinned workspace miningOrg
+[pinkMiner] focusing on artifact m1view (at workspace mining) using namespace default
+[greenMiner] joinned workspace mining
+[greenMiner] joinned workspace miningOrg
+[greenMiner] focusing on artifact m4view (at workspace mining) using namespace default
+[leader] joinned workspace miningOrg
+[leader] focusing on artifact mGrp (at workspace miningOrg) using namespace default
+[pinkMiner] focusing on artifact pinkTeamMap (at workspace mining) using namespace default
+[leader] focusing on artifact miningOrg (at workspace miningOrg) using namespace default
+[orangeMiner] joinned workspace mining
+[orangeMiner] joinned workspace miningOrg
+[orangeMiner] focusing on artifact m2view (at workspace mining) using namespace default
+[orangeMiner] focusing on artifact orangeTeamMap (at workspace mining) using namespace default
+[redMiner] focusing on artifact redTeamMap (at workspace mining) using namespace default
+[greenMiner] focusing on artifact greenTeamMap (at workspace mining) using namespace default
+[pinkMiner] focusing on artifact mGrp (at workspace miningOrg) using namespace default
+[orangeMiner] focusing on artifact mGrp (at workspace miningOrg) using namespace default
+[greenMiner] focusing on artifact mGrp (at workspace miningOrg) using namespace default
+[pinkMiner] focusing on artifact miningOrg (at workspace miningOrg) using namespace default
+[orangeMiner] focusing on artifact miningOrg (at workspace miningOrg) using namespace default
+[greenMiner] focusing on artifact miningOrg (at workspace miningOrg) using namespace default
+[orangeMiner] Estou proximo de [22,29]
+[pinkMiner] No fail event was generated for +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[pinkMiner] Found a goal for which there is no relevant plan: +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[orangeMiner] No fail event was generated for +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[orangeMiner] Found a goal for which there is no relevant plan: +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[orangeMiner] No failure event was generated for +!start[code(lookupArtifact("orangeTeamMap",_305)),code_line(9),code_src("miner_orange.asl"),error(action_failed),error_msg("cartago.ArtifactNotAvailableException"),source(self)]
+intention 10: 
+    +!start[source(self)] <- ... lookupArtifact(MapName,MapId); .print("MapName: ",MapName) / {MapName="orangeTeamMap", T="orange"}
+
+[pinkMiner] No failure event was generated for +!start[code(lookupArtifact("pinkTeamMap",_307)),code_line(22),code_src("miner_pink.asl"),error(action_failed),error_msg("cartago.ArtifactNotAvailableException"),source(self)]
+intention 11: 
+    +!start[source(self)] <- ... lookupArtifact(MapName,MapId); .print("MapName: ",MapName) / {AgY=0, MapName="pinkTeamMap", AgX=1, T="pink"}
+
+[greenMiner] Estou proximo de [24,7]
+[greenMiner] No fail event was generated for +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[greenMiner] Found a goal for which there is no relevant plan: +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[greenMiner] No failure event was generated for +!start[code(lookupArtifact("greenTeamMap",_312)),code_line(9),code_src("miner_green.asl"),error(action_failed),error_msg("cartago.ArtifactNotAvailableException"),source(self)]
+intention 13: 
+    +!start[source(self)] <- ... lookupArtifact(MapName,MapId); .print("MapName: ",MapName); focus(MapId) / {MapName="greenTeamMap", T="green"}
+
+[redMiner] focusing on artifact mGrp (at workspace miningOrg) using namespace default
+[redMiner] focusing on artifact miningOrg (at workspace miningOrg) using namespace default
+[redMiner] Estou proximo de [14,14]
+[redMiner] No fail event was generated for +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[redMiner] Found a goal for which there is no relevant plan: +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[redMiner] No failure event was generated for +!start[code(lookupArtifact("redTeamMap",_320)),code_line(10),code_src("miner_red.asl"),error(action_failed),error_msg("cartago.ArtifactNotAvailableException"),source(self)]
+intention 15: 
+    +!start[source(self)] <- ... lookupArtifact(MapName,MapId); .print("MapName: ",MapName) / {MapName="redTeamMap", T="red"}
+
+[pinkMiner] Percebi ouro em: gold(1,1)
+[pinkMiner] Abandonando os desejos e intenções para buscar gold(1,1)
+[pinkMiner] Indo para gold(1,1)
+[pinkMiner] Manuseando gold(1,1)
+[greenMiner] Percebi ouro em: gold(20,20)
+[greenMiner] Abandonando os desejos e intenções para buscar gold(20,20)
+[greenMiner] Indo para gold(20,20)
+[greenMiner] Manuseando gold(20,20)
+[pinkMiner] Alcancei (1x1)!
+[greenMiner] Alcancei (20x20)!
+[greenMiner] Alcancei (16x16)!
+[WorldModel] Agente 4 carregando ouro para o depósito!
+[greenMiner] Finalizando manuseio gold(20,20)
+[greenMiner] Distâncias de ouro: [d(9,gold(20,21))]1
+[greenMiner] O proximo outro eh gold(20,21)
+[greenMiner] Manuseando gold(20,21)
+[greenMiner] Alcancei (20x21)!
+[orangeMiner] Estou em [22,28] que está próximo de [22,29]
+[orangeMiner] Estou proximo de [11,24]
+[greenMiner] Alcancei (16x16)!
+[WorldModel] Agente 4 carregando ouro para o depósito!
+[greenMiner] Finalizando manuseio gold(20,21)
+[greenMiner] Estou proximo de [26,20]
+[redMiner] Percebi ouro em: gold(2,22)
+[redMiner] Abandonando os desejos e intenções para buscar gold(2,22)
+[redMiner] Indo para gold(2,22)
+[redMiner] Manuseando gold(2,22)
+[redMiner] Alcancei (2x22)!
+[pinkMiner] Alcancei (16x16)!
+[WorldModel] Agente 1 carregando ouro para o depósito!
+[pinkMiner] Finalizando manuseio gold(1,1)
+[leader] Time pink esta vencendo com 1 pecas de ouro
+[orangeMiner] Estou em [11,25] que está próximo de [11,24]
+[orangeMiner] Estou proximo de [28,6]
+[greenMiner] Estou em [26,19] que está próximo de [26,20]
+[greenMiner] Estou proximo de [30,12]
+[pinkMiner] Estou (11,32) e não consigo chegar em ' (13,32)
+[orangeMiner] Percebi ouro em: gold(24,24)
+[redMiner] Alcancei (16x16)!
+[greenMiner] Estou em [29,13] que está próximo de [30,12]
+[orangeMiner] Abandonando os desejos e intenções para buscar gold(24,24)
+[orangeMiner] Indo para gold(24,24)
+[orangeMiner] Manuseando gold(24,24)
+[greenMiner] Estou proximo de [25,15]
+[WorldModel] Agente 3 carregando ouro para o depósito!
+[redMiner] Finalizando manuseio gold(2,22)
+[redMiner] Distâncias de ouro: [d(5,gold(15,20))]1
+[redMiner] O proximo outro eh gold(15,20)
+[redMiner] Manuseando gold(15,20)
+[orangeMiner] Alcancei (24x24)!
+[greenMiner] Estou em [25,14] que está próximo de [25,15]
+[greenMiner] Estou proximo de [20,20]
+[redMiner] Alcancei (15x20)!
+[redMiner] Alcancei (16x16)!
+[WorldModel] Agente 3 carregando ouro para o depósito!
+[redMiner] Finalizando manuseio gold(15,20)
+[redMiner] Estou proximo de [33,30]
+[greenMiner] Estou em [20,19] que está próximo de [20,20]
+[greenMiner] Estou proximo de [2,7]
+[orangeMiner] Alcancei (16x16)!
+[WorldModel] Agente 2 carregando ouro para o depósito!
+[orangeMiner] Finalizando manuseio gold(24,24)
+[orangeMiner] Estou proximo de [2,11]
+[pinkMiner] Estou (9,30) que esta perto (9,29)
+[orangeMiner] Percebi ouro em: gold(2,12)
+[orangeMiner] Abandonando os desejos e intenções para buscar gold(2,12)
+[orangeMiner] Indo para gold(2,12)
+[orangeMiner] Manuseando gold(2,12)
+[orangeMiner] Alcancei (2x12)!
+[redMiner] Estou em [33,29] que está próximo de [33,30]
+[redMiner] Estou proximo de [21,16]
+[greenMiner] Estou em [2,8] que está próximo de [2,7]
+[greenMiner] Estou proximo de [27,8]
+[pinkMiner] Estou (5,15) que esta perto (5,14)
+[orangeMiner] Alcancei (16x16)!
+[WorldModel] Agente 2 carregando ouro para o depósito!
+[orangeMiner] Finalizando manuseio gold(2,12)
+[orangeMiner] Estou proximo de [6,30]
+[redMiner] Estou em [21,17] que está próximo de [21,16]
+[redMiner] Estou proximo de [0,22]
+[greenMiner] Estou em [26,7] que está próximo de [27,8]
+[greenMiner] Estou proximo de [21,18]
+[pinkMiner] Estou (21,26) que esta perto (21,27)
+[greenMiner] Estou em [21,17] que está próximo de [21,18]
+[greenMiner] Estou proximo de [27,27]
+[redMiner] Estou em [1,21] que está próximo de [0,22]
+[redMiner] Estou proximo de [20,28]
+[orangeMiner] Estou em [5,30] que está próximo de [6,30]
+[orangeMiner] Estou proximo de [15,1]
+[greenMiner] Estou em [27,26] que está próximo de [27,27]
+[greenMiner] Estou proximo de [15,14]
+[pinkMiner] Estou (12,12) que esta perto (12,11)
+[redMiner] Estou em [18,28] e não consigo chegar a '[20,28]
+[redMiner] Estou proximo de [29,33]
+[greenMiner] Estou em [15,15] que está próximo de [15,14]
+[greenMiner] Estou proximo de [23,1]
+[pinkMiner] Estou (1,28) que esta perto (2,29)
+[pinkMiner] Estou (1,28) e não consigo chegar em ' (22,38)
+[redMiner] Estou em [29,32] que está próximo de [29,33]
+[redMiner] Estou proximo de [5,27]
+[greenMiner] Percebi ouro em: gold(20,13)
+[greenMiner] Abandonando os desejos e intenções para buscar gold(20,13)
+[greenMiner] Indo para gold(20,13)
+[greenMiner] Manuseando gold(20,13)
+[greenMiner] Alcancei (20x13)!
+[orangeMiner] Estou em [14,2] que está próximo de [15,1]
+[greenMiner] Alcancei (16x16)!
+[GroupBoard] leader has quit, role leader removed by the platform!

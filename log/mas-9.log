@@ -1,0 +1,85 @@
+[Moise] Workspace miningOrg created.
+[Moise] getJoinedWorkspaces: [miningOrg]
+[Moise] scheme created: mining_schema: mining_sch using artifact SchemeBoard
+[Moise] group created: mGrp: miningGroup using artifact ora4mas.nopl.GroupBoard
+[Cartago] Workspace mining created.
+[Cartago] getJoinedWorkspaces: [main]
+[Cartago] artifact m1view: mining.MiningPlanet(6,0) at mining created.
+[Cartago] artifact m2view: mining.MiningPlanet(6,1) at mining created.
+[Cartago] artifact redTeamMap: mining.WorldMap("TeamRed") at mining created.
+[Cartago] artifact greenTeamMap: mining.WorldMap("TeamGreen") at mining created.
+[Cartago] artifact m4view: mining.MiningPlanet(6,3) at mining created.
+[Cartago] artifact pinkTeamMap: mining.WorldMap("TeamPink") at mining created.
+[Cartago] artifact m3view: mining.MiningPlanet(6,2) at mining created.
+[Cartago] artifact orangeTeamMap: mining.WorldMap("TeamOrange") at mining created.
+[redMiner] joinned workspace mining
+[redMiner] joinned workspace miningOrg
+[pinkMiner] joinned workspace mining
+[redMiner] focusing on artifact m3view (at workspace mining) using namespace default
+[pinkMiner] joinned workspace miningOrg
+[pinkMiner] focusing on artifact m1view (at workspace mining) using namespace default
+[leader] joinned workspace miningOrg
+[leader] focusing on artifact mGrp (at workspace miningOrg) using namespace default
+[redMiner] focusing on artifact redTeamMap (at workspace mining) using namespace default
+[greenMiner] joinned workspace mining
+[greenMiner] joinned workspace miningOrg
+[orangeMiner] joinned workspace mining
+[greenMiner] focusing on artifact m4view (at workspace mining) using namespace default
+[orangeMiner] joinned workspace miningOrg
+[orangeMiner] focusing on artifact m2view (at workspace mining) using namespace default
+[greenMiner] focusing on artifact greenTeamMap (at workspace mining) using namespace default
+[pinkMiner] focusing on artifact pinkTeamMap (at workspace mining) using namespace default
+[orangeMiner] focusing on artifact orangeTeamMap (at workspace mining) using namespace default
+[redMiner] focusing on artifact mGrp (at workspace miningOrg) using namespace default
+[pinkMiner] focusing on artifact mGrp (at workspace miningOrg) using namespace default
+[orangeMiner] focusing on artifact mGrp (at workspace miningOrg) using namespace default
+[greenMiner] focusing on artifact mGrp (at workspace miningOrg) using namespace default
+[redMiner] focusing on artifact miningOrg (at workspace miningOrg) using namespace default
+[pinkMiner] focusing on artifact miningOrg (at workspace miningOrg) using namespace default
+[leader] focusing on artifact miningOrg (at workspace miningOrg) using namespace default
+[leader] No failure event was generated for +!start[code(focus(_292)),code_line(27),code_src("leader.asl"),env_failure_reason(wrong_op_arguments(cobj_7,"focus/1")),error(action_failed),error_msg("Wrong operation arguments: operation focus on artifact workspace (type: cartago.WorkspaceArtifact)
+- expected 1 parameter(s) - types: class cartago.ArtifactId
+- actual parameter(s): cartago.OpFeedbackParam@22d0dd9d type: class cartago.OpFeedbackParam"),source(self)]
+intention 6: 
+    +!start[source(self)] <- ... focus(SchId); addScheme(SchName); commitMission(mLeader); .print("Schema: ",SchName) / {}
+
+[pinkMiner] No fail event was generated for +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[greenMiner] focusing on artifact miningOrg (at workspace miningOrg) using namespace default
+[pinkMiner] Found a goal for which there is no relevant plan: +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[orangeMiner] focusing on artifact miningOrg (at workspace miningOrg) using namespace default
+[redMiner] Estou proximo de [33,9]
+[orangeMiner] Estou proximo de [10,10]
+[redMiner] No fail event was generated for +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[orangeMiner] No fail event was generated for +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[orangeMiner] Found a goal for which there is no relevant plan: +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[redMiner] Found a goal for which there is no relevant plan: +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[greenMiner] Estou proximo de [30,26]
+[redMiner] No failure event was generated for +!start[code(lookupArtifact("redTeamMap",_304)),code_line(9),code_src("miner_red.asl"),error(action_failed),error_msg("cartago.ArtifactNotAvailableException"),source(self)]
+intention 13: 
+    +!start[source(self)] <- ... lookupArtifact(MapName,MapId); .print("MapName: ",MapName) / {MapName="redTeamMap", T="red"}
+
+[greenMiner] No fail event was generated for +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[greenMiner] Found a goal for which there is no relevant plan: +!jcm::initial_roles([role(miningOrg,"local",mGrp,miner)],5)
+[greenMiner] No failure event was generated for +!start[code(lookupArtifact("greenTeamMap",_308)),code_line(9),code_src("miner_green.asl"),error(action_failed),error_msg("cartago.ArtifactNotAvailableException"),source(self)]
+intention 16: 
+    +!start[source(self)] <- ... lookupArtifact(MapName,MapId); .print("MapName: ",MapName); focus(MapId) / {MapName="greenTeamMap", T="green"}
+
+[orangeMiner] No failure event was generated for +!start[code(lookupArtifact("orangeTeamMap",_303)),code_line(9),code_src("miner_orange.asl"),error(action_failed),error_msg("cartago.ArtifactNotAvailableException"),source(self)]
+intention 14: 
+    +!start[source(self)] <- ... lookupArtifact(MapName,MapId); .print("MapName: ",MapName) / {MapName="orangeTeamMap", T="orange"}
+
+[pinkMiner] No failure event was generated for +!start[code(lookupArtifact("pinkTeamMap",_313)),code_line(22),code_src("miner_pink.asl"),error(action_failed),error_msg("cartago.ArtifactNotAvailableException"),source(self)]
+intention 9: 
+    +!start[source(self)] <- ... lookupArtifact(MapName,MapId); .print("MapName: ",MapName) / {AgY=0, MapName="pinkTeamMap", AgX=1, T="pink"}
+
+[greenMiner] Percebi ouro em: gold(20,20)
+[greenMiner] Abandonando os desejos e intenções para buscar gold(20,20)
+[greenMiner] Indo para gold(20,20)
+[greenMiner] Manuseando gold(20,20)
+[orangeMiner] Percebi ouro em: gold(14,4)
+[orangeMiner] Abandonando os desejos e intenções para buscar gold(14,4)
+[orangeMiner] Indo para gold(14,4)
+[greenMiner] Alcancei (20x20)!
+[pinkMiner] Percebi ouro em: gold(1,1)
+[orangeMiner] Manuseando gold(14,4)
+[CAgentArch] Op left on artifact null(artifact_name= null) by orangeMiner failed - op: left

@@ -1,4 +1,4 @@
-# A Multiagent system of Gold Miners Game
+# A Multiagent systems of Gold Miners Game
 
 O objetivo do trabalho é implementar soluções baseadas em grupos de agentes no contexto do jogo Gold Miners inicialmente proposto em [Multiagent Contest, 2006](https://multiagentcontest.org/2006/).
 Detalhes: A partir do código disponível em [Tutorial Jacamo Gold Miners](http://jacamo.sourceforge.net/tutorial/gold-miners/)
